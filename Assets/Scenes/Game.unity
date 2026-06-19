@@ -477,7 +477,7 @@ MonoBehaviour:
     Weight_: 1000
   - Prefab: {fileID: 2746645353851322019, guid: 2a9a47afe0f540346bdb2a094ff658e3, type: 3}
     Weight_: 1000
-  - Prefab: {fileID: 2746645353851322019, guid: aa9bf317684c34a43b1b298668eae37b, type: 3}
+  - Prefab: {fileID: 2746645353851322019, guid: 8b58665735a54154a95145785bf1dece, type: 3}
     Weight_: 1000
   - Prefab: {fileID: 2746645353851322019, guid: aa9bf317684c34a43b1b298668eae37b, type: 3}
     Weight_: 1000
@@ -538,8 +538,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 32b2750bb5efda947b6c0a506e234dbd, type: 3}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc2c77a649522046a31fc52dab809d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Genial.ConfigurationSongSelector
-  DefaultClip: {fileID: 8300000, guid: 32b2750bb5efda947b6c0a506e234dbd, type: 3}
+  DefaultClip: {fileID: 8300000, guid: 9b52adf43a838da419cd4122fa4a04a0, type: 3}
 --- !u!1 &1630355790
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,7 +687,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 1
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -763,7 +763,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -920,7 +920,7 @@ Transform:
   m_GameObject: {fileID: 2066076879}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.2, z: 0}
+  m_LocalPosition: {x: 0, y: -7.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -26,7 +26,7 @@ namespace Genial
             AAction.action.started += (_) => TryConsume(NoteType.A, Spawner.Last);
         }
 
-        private void TryConsume(NoteType targetType, Note note)
+        public void TryConsume(NoteType targetType, Note note)
         {
             if(note == null) return;
 
@@ -40,6 +40,7 @@ namespace Genial
             info.PositionDelta = Vector3.Distance(NoteEnd.position, note.transform.position);
 
             Consumed.Invoke(info);
+            Destroy(note.gameObject);
             return;
         }
     }

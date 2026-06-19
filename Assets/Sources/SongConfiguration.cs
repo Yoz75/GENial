@@ -4,9 +4,9 @@ namespace Genial
 {
     public static class SongConfiguration
     {
-        public static AudioClip Track;
-        public static float StartDelay = 5f;
-        public static int BeatsPerMinute = 163;
+        public static AudioClip Track = null;
+        public static float StartDelay = 0;
+        public static int BeatsPerMinute = 124;
         public const int BeatsPerMeasure = 4;
     }
 }

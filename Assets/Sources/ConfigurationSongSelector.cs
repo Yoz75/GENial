@@ -9,7 +9,9 @@ namespace Genial
 
         private void Start()
         {
-            GetComponent<AudioSource>().clip = SongConfiguration.Track == null ? DefaultClip : SongConfiguration.Track;
+            var source = GetComponent<AudioSource>();
+            source.clip = SongConfiguration.Track == null ? DefaultClip : SongConfiguration.Track;
+            source.Play();
         }
     }
 }

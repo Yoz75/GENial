@@ -3,7 +3,6 @@ using UnityEngine.Events;
 
 namespace Genial
 {
-    [RequireComponent (typeof(AudioSource))]
     public class RhythmConductor : MonoBehaviour
     {
         [SerializeField] private UnityEvent Beat;
@@ -14,9 +13,25 @@ namespace Genial
             private set;
         }
 
+        /// <summary>
+        /// Time remaining before next beat in diapazone 0..1
+        /// </summary>
+        public double RemainingBeforeBeatPerCent => RemainingBeforeBeat / (60f / SongConfiguration.BeatsPerMinute);
+
+        /// <summary>
+        /// Time remaining before next beat
+        /// </summary>
+        public double RemainingBeforeBeat
+        {
+            get;
+            private set;
+        }
+
         private double StartTime;
         private double PlayedTime;
         private double RoughBeatsCount;
+
+        private double PreviousDsp;
 
         public void AddOnBeat(UnityAction action) => Beat.AddListener(action);
         public void RemoveOnBeat(UnityAction action) => Beat.RemoveListener(action);
@@ -33,12 +48,16 @@ namespace Genial
             float timePerBeat = 60f / SongConfiguration.BeatsPerMinute;
 
             PlayedTime = AudioSettings.dspTime - StartTime;
+
+            RemainingBeforeBeat -= AudioSettings.dspTime - PreviousDsp;
+            PreviousDsp = AudioSettings.dspTime;
                         
             var newBeatsCount = PlayedTime / timePerBeat;
 
             if(newBeatsCount - RoughBeatsCount >= 1f)
             {
                 RoughBeatsCount = newBeatsCount;
+                RemainingBeforeBeat = timePerBeat;
 
                 Beat.Invoke();
             }
