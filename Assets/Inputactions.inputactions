@@ -1,0 +1,95 @@
+{
+    "version": 1,
+    "name": "Inputactions",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "470e8b68-0c87-4706-827e-1feda8136cfb",
+            "actions": [
+                {
+                    "name": "CAction",
+                    "type": "Button",
+                    "id": "4e99117f-31e2-4a4b-a101-1e4c99ec54b0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TAction",
+                    "type": "Button",
+                    "id": "ea4aefdb-28ca-402d-95f1-aba57df64c4f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GAction",
+                    "type": "Button",
+                    "id": "582b894d-4ee8-4032-9b1d-7828f5715a8a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AAction",
+                    "type": "Button",
+                    "id": "6eb4154a-237d-4863-b28f-de670ab8b9b5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2ec7b989-7aa1-437b-8246-c07db499d1c4",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "019fa3d8-46fd-4d1a-903c-99dd9376fed1",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0665af24-6b7c-44f9-8a6d-7dffeb1f673f",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb1b6431-b66d-48d4-add7-f505c1e59f83",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
