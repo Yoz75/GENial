@@ -485,6 +485,7 @@ GameObject:
   - component: {fileID: 1427883226}
   - component: {fileID: 1427883225}
   - component: {fileID: 1427883224}
+  - component: {fileID: 1427883227}
   m_Layer: 0
   m_Name: Conductor
   m_TagString: Untagged
@@ -530,7 +531,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 0f3223dd96775fa4bbacc990ad4d14c4, type: 3}
+  m_Resource: {fileID: 8300000, guid: 32b2750bb5efda947b6c0a506e234dbd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -631,6 +632,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1427883227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427883223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc2c77a649522046a31fc52dab809d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Genial.ConfigurationSongSelector
+  DefaultClip: {fileID: 8300000, guid: 32b2750bb5efda947b6c0a506e234dbd, type: 3}
 --- !u!1 &1630355790
 GameObject:
   m_ObjectHideFlags: 0
