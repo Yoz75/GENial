@@ -1,12 +1,23 @@
 
 using UnityEngine;
+using CSC;
+using System.Collections.Generic;
+using System;
 
 namespace Genial
 {
+    [Serializable]
+    public struct WeightedPrefab : IWeighted
+    {
+        public GameObject Prefab;
+        public int Weight_;
+
+        public int Weight => Weight_;
+    }
     public class NoteSpawner : MonoBehaviour
     {
         [SerializeField] private int BeatsPerSpawn = 1;
-        [SerializeField] private GameObject[] NotePrefabs;
+        [SerializeField] private List<WeightedPrefab> NotePrefabs;
 
         private long PassedBeatsCount;
 
@@ -31,7 +42,9 @@ namespace Genial
             PassedBeatsCount++;
             if(PassedBeatsCount % BeatsPerSpawn != 0) return;
 
-            var noteObject = Instantiate(NotePrefab, transform);
+            var prefab = WeightedSelect<List<WeightedPrefab>, WeightedPrefab>.SelectRandom(NotePrefabs);
+
+            var noteObject = Instantiate(prefab.Prefab, transform);
 
             var note = noteObject.GetComponent<Note>();
             if(Last == null) Last = noteObject.GetComponent<Note>();
