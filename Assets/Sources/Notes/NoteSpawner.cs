@@ -17,6 +17,7 @@ namespace Genial
     public class NoteSpawner : MonoBehaviour
     {
         [SerializeField] private int BeatsPerSpawn = 1;
+        [SerializeField] private GameObject DymmyPrefab;
         [SerializeField] private List<WeightedPrefab> NotePrefabs;
 
         private long PassedBeatsCount;
@@ -40,7 +41,11 @@ namespace Genial
         private void TrySpawn()
         {
             PassedBeatsCount++;
-            if(PassedBeatsCount % BeatsPerSpawn != 0) return;
+            if(PassedBeatsCount % BeatsPerSpawn != 0)
+            {
+                Instantiate(DymmyPrefab, transform);
+                return;
+            }
 
             var prefab = WeightedSelect<List<WeightedPrefab>, WeightedPrefab>.SelectRandom(NotePrefabs);
 

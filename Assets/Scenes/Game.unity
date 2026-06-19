@@ -471,7 +471,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Genial.NoteSpawner
   BeatsPerSpawn: 2
+  DymmyPrefab: {fileID: 2746645353851322019, guid: 90408a4e6cebc504a9e5d48829660108, type: 3}
   NotePrefabs:
+  - Prefab: {fileID: 2746645353851322019, guid: 4296cf01a19b03743b6158f591c1cf2c, type: 3}
+    Weight_: 1000
+  - Prefab: {fileID: 2746645353851322019, guid: 2a9a47afe0f540346bdb2a094ff658e3, type: 3}
+    Weight_: 1000
+  - Prefab: {fileID: 2746645353851322019, guid: aa9bf317684c34a43b1b298668eae37b, type: 3}
+    Weight_: 1000
   - Prefab: {fileID: 2746645353851322019, guid: aa9bf317684c34a43b1b298668eae37b, type: 3}
     Weight_: 1000
 --- !u!1 &1427883223
