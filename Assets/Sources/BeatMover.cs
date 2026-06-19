@@ -5,12 +5,16 @@ namespace Genial
     /// <summary>
     /// Moves the object on song beats
     /// </summary>
+    [RequireComponent(typeof(Rigidbody2D))]
     public class BeatMover : MonoBehaviour
     {
         [SerializeField] private Vector3 MovementDirection;
 
+        private Rigidbody2D Rigidbody;
+
         private void Start()
         {
+            Rigidbody = GetComponent<Rigidbody2D>();
             RhythmConductor.Instance.AddOnBeat(Move);
         }
 
@@ -21,7 +25,7 @@ namespace Genial
 
         private void Move()
         {
-            transform.position += MovementDirection;
+            Rigidbody.MovePosition(transform.position + MovementDirection);
         }
     }
 }
