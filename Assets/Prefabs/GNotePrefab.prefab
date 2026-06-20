@@ -12,13 +12,11 @@ GameObject:
   - component: {fileID: 6116195264739628777}
   - component: {fileID: 7236176048474736962}
   - component: {fileID: 2954951062096121730}
-  - component: {fileID: -6939052443424992562}
-  - component: {fileID: 4452160199015463738}
   - component: {fileID: -6818822852092196504}
   - component: {fileID: 8412912854583495518}
   m_Layer: 0
   m_Name: GNotePrefab
-  m_TagString: Untagged
+  m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,46 +146,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-6939052443424992562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2746645353851322019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccb3662d581bf10409e4454237eb836d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Genial.OnTriggerEvent
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4452160199015463738}
-        m_TargetAssemblyTypeName: Genial.Destroyable, Assembly-CSharp
-        m_MethodName: Destroy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  TriggerTag: NoteEnd
---- !u!114 &4452160199015463738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2746645353851322019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44619cfb3f1d8fd4283f138d73318f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Genial.Destroyable
 --- !u!61 &-6818822852092196504
 BoxCollider2D:
   m_ObjectHideFlags: 0

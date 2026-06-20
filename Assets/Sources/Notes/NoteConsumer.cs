@@ -30,6 +30,22 @@ namespace Genial
             AAction.action.started += (_) => TryConsume(NoteType.A, GetNearest());
         }
 
+        private void Update()
+        {
+            Note note = GetNearest();
+            if(note == null) return;
+
+            bool cKeyPressed = CAction.action.ReadValue<bool>();
+            bool tKeyPressed = TAction.action.ReadValue<bool>();
+            bool gKeyPressed = GAction.action.ReadValue<bool>();
+            bool aKeyPressed = AAction.action.ReadValue<bool>();
+
+            if((note.Type & NoteType.C) != 0)
+            {
+                
+            }
+        }
+
         public void TryConsume(NoteType targetType, Note note)
         {
             if(note == null) return;
@@ -51,7 +67,6 @@ namespace Genial
         private Note GetNearest()
         {
             int hitsCount = Physics2D.OverlapCircle(NoteEnd.position, ConsumeRadius, ContactFilter2D.noFilter, NearestColliders);
-            Debug.Log(hitsCount);
             Note nearest = null;
             float minDistance = float.MaxValue;
             Span<Collider2D> hits = NearestColliders.AsSpan(0, hitsCount);

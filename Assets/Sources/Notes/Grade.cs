@@ -7,6 +7,7 @@ namespace Genial
         Meh,
         Good,
         Great,
-        GENial
+        GENial,
+        Count
     }
 }

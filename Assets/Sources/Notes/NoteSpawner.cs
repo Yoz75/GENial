@@ -17,7 +17,7 @@ namespace Genial
     public class NoteSpawner : MonoBehaviour
     {
         [SerializeField] private int BeatsPerSpawn = 1;
-        [SerializeField] private GameObject DymmyPrefab;
+        [SerializeField] private GameObject DummyPrefab;
         [SerializeField] private List<WeightedPrefab> NotePrefabs;
 
         private long PassedBeatsCount;
@@ -37,15 +37,14 @@ namespace Genial
             PassedBeatsCount++;
             if(PassedBeatsCount % BeatsPerSpawn != 0)
             {
-                Instantiate(DymmyPrefab, transform);
+                var @object = Instantiate(DummyPrefab, transform);
+                @object.transform.localPosition = Vector3.zero;
                 return;
             }
 
             var prefab = WeightedSelect<List<WeightedPrefab>, WeightedPrefab>.SelectRandom(NotePrefabs);
-
             var noteObject = Instantiate(prefab.Prefab, transform);
-
-            var note = noteObject.GetComponent<Note>();
+            noteObject.transform.localPosition = Vector3.zero;
         }
     }
 }

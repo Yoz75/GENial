@@ -1,10 +1,70 @@
 fileFormatVersion: 2
-guid: 430a8588bbfd74f4ea05a02f451e9e01
+guid: 7abf5034ac5edca4382bd635c841d169
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2479660967140211249
-    second: Gene_0
+      213: -6266441713338254748
+    second: GradeMarks_0
+  - first:
+      213: -2941947815099013122
+    second: GradeMarks_1
+  - first:
+      213: -6974936521672796426
+    second: GradeMarks_2
+  - first:
+      213: 1273432863477964220
+    second: GradeMarks_3
+  - first:
+      213: -5980778103877563189
+    second: GradeMarks_4
+  - first:
+      213: 1593462629918282808
+    second: GradeMarks_5
+  - first:
+      213: -45087742980143264
+    second: GradeMarks_6
+  - first:
+      213: -9184241670741478180
+    second: GradeMarks_7
+  - first:
+      213: -338640737795121607
+    second: GradeMarks_8
+  - first:
+      213: -2999375220927158175
+    second: GradeMarks_9
+  - first:
+      213: -5448158544880107053
+    second: GradeMarks_10
+  - first:
+      213: 6849258518449537424
+    second: GradeMarks_11
+  - first:
+      213: -1971109223294843304
+    second: GradeMarks_12
+  - first:
+      213: 6570809345765925251
+    second: GradeMarks_13
+  - first:
+      213: 1897207722597751487
+    second: GradeMarks_14
+  - first:
+      213: -8650634788054009457
+    second: GradeMarks_15
+  - first:
+      213: -6989752591018362502
+    second: GradeMarks_16
+  - first:
+      213: 4197804636049605166
+    second: GradeMarks_17
+  - first:
+      213: 4753474283802693916
+    second: GradeMarks_18
+  - first:
+      213: -3329454357131566237
+    second: GradeMarks_19
+  - first:
+      213: 3171456988511524414
+    second: GradeMarks_20
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -73,9 +133,9 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,12 +186,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gene_0
+      name: GradeMarks_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 448
-        width: 48
+        y: 0
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -141,19 +201,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc5c43afc79769dd0800000000000000
-      internalID: -2479660967140211249
+      spriteID: 46a78c676702909a0800000000000000
+      internalID: -6266441713338254748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gene_1
+      name: GradeMarks_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 448
-        width: 48
+        x: 64
+        y: 0
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -161,21 +221,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: af156e993e2bc9843b2bb1a8c608eef9
-      internalID: -619276230
+      spriteID: ef7694d9c0a1c27d0800000000000000
+      internalID: -2941947815099013122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gene_2
+      name: GradeMarks_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 448
-        width: 48
+        x: 128
+        y: 0
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -183,43 +243,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ce979b67f7d0ed74dba037bc49395c97
-      internalID: 608772422
+      spriteID: 6f65bc6303c043f90800000000000000
+      internalID: -6974936521672796426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gene_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 448
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0ab2ca9a580f4d46b0f2f3ed81c1459
-      internalID: -865733809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gene_4
+      name: GradeMarks_3
       rect:
         serializedVersion: 2
         x: 192
-        y: 448
-        width: 48
+        y: 0
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -227,21 +265,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b434bd991d73ed141beef7f92f28e0de
-      internalID: -1288754119
+      spriteID: cbd99e041742ca110800000000000000
+      internalID: 1273432863477964220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gene_5
+      name: GradeMarks_4
       rect:
         serializedVersion: 2
-        x: 240
-        y: 448
-        width: 48
+        x: 256
+        y: 0
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -249,54 +287,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1f428f8d0a9df2041ba8c881e79be85a
-      internalID: 20731094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gene_6
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 448
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9402d0dbab6a2dd4c8b9938ce083df66
-      internalID: -1154831987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gene_7
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 448
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41b39e7f0dcf9e54a9f772859ac6964c
-      internalID: 908936815
+      spriteID: bcc81f58002000da0800000000000000
+      internalID: -5980778103877563189
       vertices: []
       indices: 
       edges: []
@@ -305,7 +299,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fba59799dae984b41a00d9f09fc9ee78
+    spriteID: 422a7b5c8c39581418b71ad3de8523ff
     internalID: 0
     vertices: []
     indices: 
@@ -317,16 +311,13 @@ TextureImporter:
       - key: SpriteEditor.SliceOnImport
         value: True
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Gene_0: -2479660967140211249
-      Gene_1: -619276230
-      Gene_2: 608772422
-      Gene_3: -865733809
-      Gene_4: -1288754119
-      Gene_5: 20731094
-      Gene_6: -1154831987
-      Gene_7: 908936815
+      GradeMarks_0: -6266441713338254748
+      GradeMarks_1: -2941947815099013122
+      GradeMarks_2: -6974936521672796426
+      GradeMarks_3: 1273432863477964220
+      GradeMarks_4: -5980778103877563189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
