@@ -191,6 +191,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   ConsumeRadius: 1.5
+  ComboInputWindow: 0.1
   NoteEnd: {fileID: 813315240}
   Spawner: {fileID: 864494867}
   CAction: {fileID: 6248617870626711916, guid: 6a5c877e0811945469bccac20fb0dee4, type: 3}
@@ -477,7 +478,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -502,7 +503,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -1.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -842,6 +843,12 @@ MonoBehaviour:
     Weight_: 1000
   - Prefab: {fileID: 2746645353851322019, guid: aa9bf317684c34a43b1b298668eae37b, type: 3}
     Weight_: 1000
+  - Prefab: {fileID: 2746645353851322019, guid: 281923e433478134397a4f6b84eaf6f7, type: 3}
+    Weight_: 250
+  - Prefab: {fileID: 2746645353851322019, guid: 4261205a6ccb8214fac2f46bf733a6ef, type: 3}
+    Weight_: 250
+  - Prefab: {fileID: 2746645353851322019, guid: 1b225701e1728824f9f5f11af04ff280, type: 3}
+    Weight_: 250
 --- !u!1 &1215246011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,7 +1824,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -269, y: -539.88}
+  m_AnchoredPosition: {x: -429, y: -539.88}
   m_SizeDelta: {x: 475.01538, y: 530.374}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2056110211

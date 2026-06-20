@@ -33,7 +33,7 @@ namespace Genial
         public void UpdateScore(ConsumedNoteInfo info)
         {
             Grade grade;
-            if(info.IsTypeMismatch) grade = Grade.Miss;
+            if(info.IsMiss) grade = Grade.Miss;
             else grade = Delta2GradeConverter.Convert(info.PositionDelta);
 
             GradesDistributions[(int)grade]++;

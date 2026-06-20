@@ -10,7 +10,7 @@ namespace Genial
         public void Spawn(ConsumedNoteInfo info)
         {
             Grade grade;
-            if(info.IsTypeMismatch) grade = Grade.Miss;
+            if(info.IsMiss) grade = Grade.Miss;
             else grade = Delta2GradeConverter.Convert(info.PositionDelta);
 
             Sprite sprite;

@@ -15,8 +15,9 @@ namespace Genial
             if(collision.CompareTag(NoteTag))
             { 
                 var note = collision.GetComponent<Note>();
-                // A little hack: notes are never None type so it alwasy will miss!
-                Consumer.TryConsume(NoteType.None, note);
+                if(note == null) return;
+
+                Consumer.ConsumeMiss(note);
                 Destroy(collision.gameObject);
             }
         }
