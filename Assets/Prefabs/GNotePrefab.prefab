@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2f44df435bb0f40ab53510c11362e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Genial.Note
-  Next: {fileID: 0}
+  DeactivatedSprite: {fileID: -2479660967140211249, guid: 430a8588bbfd74f4ea05a02f451e9e01, type: 3}
   Type: 4
 --- !u!114 &2954951062096121730
 MonoBehaviour:

@@ -1,11 +1,24 @@
 
 using UnityEngine;
-
 namespace Genial
 {
+    [RequireComponent(typeof(SpriteRenderer))]
     public class Note : MonoBehaviour
     {
-        public Note Next;
+        [SerializeField] private Sprite DeactivatedSprite;
         public NoteType Type;
+
+        private SpriteRenderer Renderer;
+
+        private void Start()
+        {
+            Renderer = GetComponent<SpriteRenderer>();
+        }
+
+        public void Deactivate()
+        { 
+            Renderer.sprite = DeactivatedSprite;
+            Destroy(this);
+        }
     }
 }

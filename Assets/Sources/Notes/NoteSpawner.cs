@@ -22,12 +22,6 @@ namespace Genial
 
         private long PassedBeatsCount;
 
-        public Note Last
-        {
-            get;
-            private set;
-        }
-
         private void Start()
         {
             RhythmConductor.Instance.AddOnBeat(TrySpawn);
@@ -52,8 +46,6 @@ namespace Genial
             var noteObject = Instantiate(prefab.Prefab, transform);
 
             var note = noteObject.GetComponent<Note>();
-            if(Last == null) Last = noteObject.GetComponent<Note>();
-            else Last.Next = noteObject.GetComponent<Note>();
         }
     }
 }

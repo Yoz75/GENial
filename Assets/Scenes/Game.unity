@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 104125633}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -166,6 +166,7 @@ MonoBehaviour:
   Consumed:
     m_PersistentCalls:
       m_Calls: []
+  ConsumeRadius: 1.5
   NoteEnd: {fileID: 1630355793}
   Spawner: {fileID: 864494867}
   CAction: {fileID: 6248617870626711916, guid: 6a5c877e0811945469bccac20fb0dee4, type: 3}
