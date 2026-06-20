@@ -1,16 +1,43 @@
+
 using UnityEngine;
 
-public class ScoreManager : MonoBehaviour
+namespace Genial
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    // God-Manager class ahhhhh core 😭😭😭😭
+    public class ScoreManager : MonoBehaviour
     {
-        
-    }
+        // It should be a dictionary but im too lazy to initialize each grade as 0
+        public int[] GradesDistributions
+        {
+            get; 
+            private set;
+        } = new int[(int) Grade.Count];
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public int Score
+        {
+            get;
+            private set;
+        }
+
+        public static ScoreManager Instance
+        {
+            get;
+            private set;
+        }
+
+        private void Start()
+        {
+            Instance = this;
+        }
+
+        public void UpdateScore(ConsumedNoteInfo info)
+        {
+            Grade grade;
+            if(info.IsTypeMismatch) grade = Grade.Miss;
+            else grade = Delta2GradeConverter.Convert(info.PositionDelta);
+
+            GradesDistributions[(int)grade]++;
+            Score += Grade2ScoreConverter.Convert(grade);
+        }
     }
 }
