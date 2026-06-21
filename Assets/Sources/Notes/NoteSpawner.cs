@@ -32,6 +32,12 @@ namespace Genial
             RhythmConductor.Instance.RemoveOnBeat(TrySpawn);
         }
 
+        /// Yup, we just destroy the script to stop ts
+        public void Stop()
+        {
+            Destroy(this);
+        }
+
         private void TrySpawn()
         {
             PassedBeatsCount++;
