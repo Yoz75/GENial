@@ -1,6 +1,7 @@
 using SFB;
 using System.Collections;
 using System.Runtime.InteropServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Networking;
@@ -9,6 +10,8 @@ namespace Genial
 {
     public class SongLoader : MonoBehaviour
     {
+        [SerializeField] private TMP_Text ErrorText;
+
 #if UNITY_WEBGL && !UNITY_EDITOR
         //
         // WebGL
@@ -24,7 +27,7 @@ namespace Genial
         // Called from browser
         public void OnFileUpload(string url)
         {
-            StartCoroutine(OutputRoutine(url));
+            StartCoroutine(LoadClipCoroutine(url));
         }
 #else
 
@@ -42,17 +45,24 @@ namespace Genial
             using UnityWebRequest uwr = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.MPEG);
             yield return uwr.SendWebRequest();
 
-            if(uwr.result == UnityWebRequest.Result.ConnectionError || uwr.result == UnityWebRequest.Result.ProtocolError)
+            try
             {
-                Debug.Log(uwr.error);
-            }
-            else
-            {
-                // Get the downloaded audio clip
-                AudioClip clip = DownloadHandlerAudioClip.GetContent(uwr);
+                if(uwr.result == UnityWebRequest.Result.ConnectionError || uwr.result == UnityWebRequest.Result.ProtocolError)
+                {
+                    Debug.Log(uwr.error);
+                }
+                else
+                {
+                    // Get the downloaded audio clip
+                    AudioClip clip = DownloadHandlerAudioClip.GetContent(uwr);
 
-                // Assign and play
-                SongConfiguration.Track = clip;
+                    // Assign and play
+                    SongConfiguration.Track = clip;
+                }
+            }
+            catch(System.Exception ex)
+            {
+                ErrorText.text = $"Oi! An error occured, try to load other song or place it in a different directory. Error: {ex.Message}";
             }
         }
     }

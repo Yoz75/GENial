@@ -1492,6 +1492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a721c9d83d830fa40997cb8a8eb90eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Genial.SongLoader
+  ErrorText: {fileID: 611818841}
 --- !u!1 &760987704
 GameObject:
   m_ObjectHideFlags: 0
