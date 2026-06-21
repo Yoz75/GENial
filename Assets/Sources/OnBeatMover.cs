@@ -3,7 +3,8 @@ using UnityEngine;
 namespace Genial
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class BeatMover : MonoBehaviour
+    [RequireComponent (typeof(Destroyable))]
+    public class OnBeatMover : MonoBehaviour
     {
         [SerializeField] private Vector3 MovementDirection;
 
@@ -12,22 +13,26 @@ namespace Genial
             AnimationCurve.EaseInOut(0, 0, 1, 1);
 
         private Rigidbody2D Rigidbody;
+        private Destroyable Destroyable;
         private Vector3 TargetPosition;
         private Vector3 PreviousBeatPosition;
 
         private void Start()
         {
             Rigidbody = GetComponent<Rigidbody2D>();
+            Destroyable = GetComponent<Destroyable>();
 
             PreviousBeatPosition = transform.position;
             TargetPosition = transform.position;
 
             RhythmConductor.Instance.AddOnBeat(UpdatedTargetPosition);
+            SongEndedEvent.Instance.AddOnSongEnded(Destroyable.Destroy);
         }
 
         private void OnDestroy()
         {
-            RhythmConductor.Instance?.RemoveOnBeat(UpdatedTargetPosition);
+            RhythmConductor.Instance.RemoveOnBeat(UpdatedTargetPosition);
+            SongEndedEvent.Instance.RemoveOnSongEnded(Destroyable.Destroy);
         }
 
         private void UpdatedTargetPosition()

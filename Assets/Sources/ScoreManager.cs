@@ -7,11 +7,7 @@ namespace Genial
     public class ScoreManager : MonoBehaviour
     {
         // It should be a dictionary but im too lazy to initialize each grade as 0
-        public int[] GradesDistributions
-        {
-            get; 
-            private set;
-        } = new int[(int) Grade.Count];
+        private int[] GradesDistributions = new int[(int) Grade.Count];
 
         public int Score
         {
@@ -29,6 +25,8 @@ namespace Genial
         {
             Instance = this;
         }
+
+        public int GetGradeCount(Grade grade) => GradesDistributions[(int)grade];
 
         public void UpdateScore(ConsumedNoteInfo info)
         {

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2954951062096121730}
   - component: {fileID: -6818822852092196504}
   - component: {fileID: 8412912854583495518}
+  - component: {fileID: 9075260927807717147}
   m_Layer: 0
   m_Name: CTNotePrefab
   m_TagString: Note
@@ -219,3 +220,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &9075260927807717147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2746645353851322019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44619cfb3f1d8fd4283f138d73318f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Genial.Destroyable
