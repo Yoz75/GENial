@@ -6,10 +6,11 @@ namespace Genial
     // God-Manager class ahhhhh core 😭😭😭😭
     public class ScoreManager : MonoBehaviour
     {
+        private const float Combo2ScoreCoefficient = 0.005f;
         // It should be a dictionary but im too lazy to initialize each grade as 0
         private int[] GradesDistributions = new int[(int) Grade.Count];
 
-        public int Score
+        public float Score
         {
             get;
             private set;
@@ -35,7 +36,7 @@ namespace Genial
             else grade = Delta2GradeConverter.Convert(info.PositionDelta);
 
             GradesDistributions[(int)grade]++;
-            Score += Grade2ScoreConverter.Convert(grade);
+            Score += Grade2ScoreConverter.Convert(grade) +  (Combo.ComboCount  * Combo.ComboCount) * Combo2ScoreCoefficient;
         }
     }
 }

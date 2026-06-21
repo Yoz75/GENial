@@ -3,7 +3,7 @@ namespace Genial
 {
     public static class Grade2ScoreConverter
     {
-        public static int Convert(Grade grade)
+        public static float Convert(Grade grade)
         {
             switch(grade)
             {

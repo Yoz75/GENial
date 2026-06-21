@@ -11,12 +11,12 @@ namespace Genial
         public void Display()
         {
             MissCount.text = ScoreManager.Instance.GetGradeCount(Grade.Miss).ToString();
-            MehCount.text = ScoreManager.Instance.GetGradeCount(Grade.Miss).ToString();
-            GoodCount.text = ScoreManager.Instance.GetGradeCount(Grade.Miss).ToString();
-            GreatCount.text = ScoreManager.Instance.GetGradeCount(Grade.Miss).ToString();
-            GenialCount.text = ScoreManager.Instance.GetGradeCount(Grade.Miss).ToString();
+            MehCount.text = ScoreManager.Instance.GetGradeCount(Grade.Meh).ToString();
+            GoodCount.text = ScoreManager.Instance.GetGradeCount(Grade.Good).ToString();
+            GreatCount.text = ScoreManager.Instance.GetGradeCount(Grade.Great).ToString();
+            GenialCount.text = ScoreManager.Instance.GetGradeCount(Grade.GENial).ToString();
 
-            ScoreCount.text = ScoreManager.Instance.Score.ToString();
+            ScoreCount.text = Mathf.RoundToInt(ScoreManager.Instance.Score).ToString();
         }
     }
 }
