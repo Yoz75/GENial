@@ -139,9 +139,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fc5c43afc79769dd0800000000000000
+      spriteID: 1fe73b2da59768d4892608d2c340cecf
       internalID: -2479660967140211249
       vertices: []
       indices: 
@@ -163,7 +163,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af156e993e2bc9843b2bb1a8c608eef9
+      spriteID: e95605714b5d61f459379c7211e80fec
       internalID: -619276230
       vertices: []
       indices: 
@@ -185,7 +185,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce979b67f7d0ed74dba037bc49395c97
+      spriteID: 7f765a3098e25ae4a94e78a6ef7744a8
       internalID: 608772422
       vertices: []
       indices: 
@@ -207,7 +207,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0ab2ca9a580f4d46b0f2f3ed81c1459
+      spriteID: 3e56260ab650b6b44aa4c56b2cb65421
       internalID: -865733809
       vertices: []
       indices: 
@@ -229,7 +229,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b434bd991d73ed141beef7f92f28e0de
+      spriteID: d722c3368061b13428ceb91e5d7f8bd7
       internalID: -1288754119
       vertices: []
       indices: 
@@ -251,7 +251,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f428f8d0a9df2041ba8c881e79be85a
+      spriteID: 3004462f32da2f84baa650ac1471c475
       internalID: 20731094
       vertices: []
       indices: 
@@ -273,7 +273,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9402d0dbab6a2dd4c8b9938ce083df66
+      spriteID: a471f2ee45166ef46b979ac70bd91219
       internalID: -1154831987
       vertices: []
       indices: 
@@ -295,8 +295,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41b39e7f0dcf9e54a9f772859ac6964c
+      spriteID: 7b59c87b140dcc746a927e3a06b1d2bf
       internalID: 908936815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gene_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f739ebee16f994648b6072e799ebfb1a
+      internalID: -1645069352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gene_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 448
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd969004facb48a47a1a8b545a6340e1
+      internalID: -1156279564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gene_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bde8d124e732144bcff5175279b9b8
+      internalID: 994358819
       vertices: []
       indices: 
       edges: []
@@ -321,12 +387,15 @@ TextureImporter:
     nameFileIdTable:
       Gene_0: -2479660967140211249
       Gene_1: -619276230
+      Gene_10: 994358819
       Gene_2: 608772422
       Gene_3: -865733809
       Gene_4: -1288754119
       Gene_5: 20731094
       Gene_6: -1154831987
       Gene_7: 908936815
+      Gene_8: -1645069352
+      Gene_9: -1156279564
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
