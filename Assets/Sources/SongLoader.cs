@@ -10,7 +10,7 @@ namespace Genial
 {
     public class SongLoader : MonoBehaviour
     {
-        [SerializeField] private TMP_Text ErrorText;
+        [SerializeField] private ErrorMessageBinding ErrorBinding;
 
 #if UNITY_WEBGL && !UNITY_EDITOR
         //
@@ -62,7 +62,7 @@ namespace Genial
             }
             catch(System.Exception ex)
             {
-                ErrorText.text = $"Oi! An error occured, try to load other song or place it in a different directory. Error: {ex.Message}";
+                ErrorBinding.Message = $"Oi! An error occured, try to load other song or place it in a different directory. Error: {ex.Message}";
             }
         }
     }

@@ -91,38 +91,5 @@ namespace theaaa
             }
             return false;
         }
-        /// <summary>
-        /// Zombi for now
-        /// UnCollaps for new object parent
-        /// </summary>
-        public static void UnCollaps()
-        {
-            var type = typeof(EditorWindow).Assembly.GetType("UnityEditor.SceneHierarchyWindow");
-            var window = EditorWindow.GetWindow(type);
-            var exprec = type.GetMethod("SetExpandedRecursive");
-            exprec?.Invoke(window, new object[] { Selection.activeGameObject.transform.GetInstanceID(), true });
-
-        }
-
-        /// <summary>
-        /// Zombi for now
-        /// </summary>
-        public static void UnCollapseHierarchy()
-        {
-            var type = typeof(EditorWindow).Assembly.GetType("UnityEditor.SceneHierarchyWindow");
-            var hierarchyWindow = EditorWindow.GetWindow(type);
-            var expandMethodInfo = hierarchyWindow.GetType().GetMethod("SetExpandedRecursive");
-            foreach (GameObject root in SceneManager.GetActiveScene().GetRootGameObjects())
-            {
-                Debug.Log(root.name);
-                if (root != Selection.activeGameObject)
-                {
-                    expandMethodInfo.Invoke(hierarchyWindow, new object[] { root.GetInstanceID(), true });
-                    //return;
-                }
-
-            }
-        }
-
     }
 }

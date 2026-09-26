@@ -6,7 +6,7 @@ namespace Genial
     {
         public static AudioClip Track = null;
         public static float StartDelay = 0;
-        public static int BeatsPerMinute = 124;
+        public static float BeatsPerMinute = 124;
         public const int BeatsPerMeasure = 4;
     }
 }

@@ -9,6 +9,13 @@ namespace Genial
     [RequireComponent (typeof(AudioSource))]
     public class SongEndedEvent : MonoBehaviour
     {
+        private enum SongState
+        {
+            NotStarted = 0,
+            Playing,
+            Ended
+        }
+
         public static SongEndedEvent Instance
         {
             get;
@@ -17,7 +24,7 @@ namespace Genial
 
         [SerializeField] private UnityEvent SongEnded;
         private AudioSource Source;
-        private bool IsEndedAlready;
+        private SongState State;
 
         public void AddOnSongEnded(UnityAction action) => SongEnded.AddListener(action);
         public void RemoveOnSongEnded(UnityAction action) => SongEnded.RemoveListener(action);
@@ -30,9 +37,13 @@ namespace Genial
 
         private void Update()
         {
-            if(!IsEndedAlready && !Source.isPlaying)
+            if(State == SongState.NotStarted && Source.isPlaying)
             {
-                IsEndedAlready = true;
+                State = SongState.Playing;
+            }
+            else if(State == SongState.Playing && !Source.isPlaying)
+            { 
+                State = SongState.Ended;
                 SongEnded.Invoke();
             }
         }

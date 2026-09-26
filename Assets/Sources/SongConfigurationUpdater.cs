@@ -5,24 +5,14 @@ namespace Genial
 {
     public class SongConfigurationUpdater : MonoBehaviour
     {
-        public void UpdateBPM(string value)
+        public void UpdateBPM(float value)
         {
-            if(!int.TryParse(value, out int bpm))
-            {
-                return;
-            }
-
-            SongConfiguration.BeatsPerMinute = bpm;
+            SongConfiguration.BeatsPerMinute = value;
         }
 
-        public void UpdateDelay(string value)
+        public void UpdateDelay(float value)
         {
-            if(!float.TryParse(value, out float delay))
-            {
-                return;
-            }
-
-            SongConfiguration.StartDelay = delay;
+            SongConfiguration.StartDelay = value;
         }
     }
 }

@@ -1,8 +1,28 @@
 
 namespace Genial
 {
-    public static class Combo 
+    public static class Combo
     {
-        public static int ComboCount = 0;
+        private static int ComboCountValue;
+
+        public static int MaxCombo
+        {
+            get;
+            private set;
+        }
+
+        public static int ComboCount
+        {
+            get => ComboCountValue;
+            set
+            {
+                if(value > MaxCombo)
+                {
+                    MaxCombo = value;
+                }
+
+                ComboCountValue = value;
+            }
+        }
     }
 }

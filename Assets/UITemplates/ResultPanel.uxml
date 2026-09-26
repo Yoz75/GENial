@@ -1,0 +1,54 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" authoring-id="890703421" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIStyles/GENialStyle.uss?fileID=7433441132597879392&amp;guid=43c53e55ba41bb845addab7a50c7633b&amp;type=3#GENialStyle"/>
+    <ui:VisualElement name="Root" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="GradesPanel" class="panel" style="flex-grow: 1; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; flex-direction: column; margin-right: 4px; margin-top: 8px; margin-bottom: 8px; margin-left: 8px;">
+            <ui:VisualElement name="Grades" style="flex-grow: 1; flex-direction: column; align-self: center;">
+                <Genial.PrefixedLabel content-text="00" prefix="Miss" text="" name="MissLabel" class="label" style="color: rgb(255, 44, 0); -unity-font-definition: url(&quot;project://database/Assets/Fonts/determination-rus-by-lyajka.otf?fileID=12800000&amp;guid=2c083882a88b4f24a8f38ca52d1d5c8e&amp;type=3#determination-rus-by-lyajka&quot;); align-self: center; font-size: 75px;">
+                    <Bindings>
+                        <ui:DataBinding property="ContentText" data-source="project://database/Assets/Bindings/GradesBinding.asset?fileID=11400000&amp;guid=b699686ea2194cb49a01af22ec4732f0&amp;type=2#GradesBinding" data-source-path="MissSerializedCount" binding-mode="ToTarget"/>
+                    </Bindings>
+                </Genial.PrefixedLabel>
+                <Genial.PrefixedLabel content-text="00" prefix="Meh" text="фывфыв: фывфыво" name="MehLabel" class="label" style="color: rgb(255, 187, 0); -unity-font-definition: url(&quot;project://database/Assets/Fonts/determination-rus-by-lyajka.otf?fileID=12800000&amp;guid=2c083882a88b4f24a8f38ca52d1d5c8e&amp;type=3#determination-rus-by-lyajka&quot;); align-self: center; font-size: 75px;">
+                    <Bindings>
+                        <ui:DataBinding property="ContentText" data-source="project://database/Assets/Bindings/GradesBinding.asset?fileID=11400000&amp;guid=b699686ea2194cb49a01af22ec4732f0&amp;type=2#GradesBinding" data-source-path="MehSerializedCount" binding-mode="ToTarget"/>
+                    </Bindings>
+                </Genial.PrefixedLabel>
+                <Genial.PrefixedLabel content-text="00" prefix="Good" text="фывфыв: фывфыво" name="GoodLabel" class="label" style="color: rgb(0, 185, 69); -unity-font-definition: url(&quot;project://database/Assets/Fonts/determination-rus-by-lyajka.otf?fileID=12800000&amp;guid=2c083882a88b4f24a8f38ca52d1d5c8e&amp;type=3#determination-rus-by-lyajka&quot;); align-self: center; font-size: 75px;">
+                    <Bindings>
+                        <ui:DataBinding property="ContentText" data-source="project://database/Assets/Bindings/GradesBinding.asset?fileID=11400000&amp;guid=b699686ea2194cb49a01af22ec4732f0&amp;type=2#GradesBinding" data-source-path="GoodSerializedCount" binding-mode="ToTarget"/>
+                    </Bindings>
+                </Genial.PrefixedLabel>
+                <Genial.PrefixedLabel content-text="00" prefix="Great" text="фывфыв: фывфыво" name="GreatLabel" class="label" style="color: rgb(25, 36, 177); -unity-font-definition: url(&quot;project://database/Assets/Fonts/determination-rus-by-lyajka.otf?fileID=12800000&amp;guid=2c083882a88b4f24a8f38ca52d1d5c8e&amp;type=3#determination-rus-by-lyajka&quot;); align-self: center; font-size: 75px;">
+                    <Bindings>
+                        <ui:DataBinding property="ContentText" data-source="project://database/Assets/Bindings/GradesBinding.asset?fileID=11400000&amp;guid=b699686ea2194cb49a01af22ec4732f0&amp;type=2#GradesBinding" data-source-path="GreatSerializedCount" binding-mode="ToTarget"/>
+                    </Bindings>
+                </Genial.PrefixedLabel>
+                <Genial.PrefixedLabel content-text="00" prefix="GENial" text="фывфыв: фывфыво" name="GENialLabel" class="label" style="color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/determination-rus-by-lyajka.otf?fileID=12800000&amp;guid=2c083882a88b4f24a8f38ca52d1d5c8e&amp;type=3#determination-rus-by-lyajka&quot;); align-self: center; font-size: 75px;">
+                    <Bindings>
+                        <ui:DataBinding property="ContentText" data-source="project://database/Assets/Bindings/GradesBinding.asset?fileID=11400000&amp;guid=b699686ea2194cb49a01af22ec4732f0&amp;type=2#GradesBinding" data-source-path="GenialSerializedCount" binding-mode="ToTarget"/>
+                    </Bindings>
+                </Genial.PrefixedLabel>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="TotalPanel" class="panel" style="flex-grow: 1; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; flex-direction: column; align-items: stretch; margin-left: 4px; margin-top: 8px; margin-right: 8px; margin-bottom: 8px;">
+            <ui:VisualElement name="Infos" style="flex-grow: 1; flex-direction: column; align-self: center;">
+                <Genial.PrefixedLabel content-text="00" prefix="Total" text="фывфыв: фывфыво" name="TotalScoreLabel" class="label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/determination-rus-by-lyajka.otf?fileID=12800000&amp;guid=2c083882a88b4f24a8f38ca52d1d5c8e&amp;type=3#determination-rus-by-lyajka&quot;); align-self: center; font-size: 75px;">
+                    <Bindings>
+                        <ui:DataBinding property="ContentText" data-source="project://database/Assets/Bindings/TotalResultsBingind.asset?fileID=11400000&amp;guid=022b68daf9754b3449f10daae750cc89&amp;type=2#TotalResultsBingind" data-source-path="TotalScore" binding-mode="ToTarget"/>
+                    </Bindings>
+                </Genial.PrefixedLabel>
+                <Genial.PrefixedLabel content-text="00" prefix="Combo" text="фывфыв: фывфыво" name="MaxComboLabel" class="label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/determination-rus-by-lyajka.otf?fileID=12800000&amp;guid=2c083882a88b4f24a8f38ca52d1d5c8e&amp;type=3#determination-rus-by-lyajka&quot;); align-self: center; font-size: 75px;">
+                    <Bindings>
+                        <ui:DataBinding property="ContentText" data-source="project://database/Assets/Bindings/TotalResultsBingind.asset?fileID=11400000&amp;guid=022b68daf9754b3449f10daae750cc89&amp;type=2#TotalResultsBingind" data-source-path="MaxCombo" binding-mode="ToTarget"/>
+                    </Bindings>
+                </Genial.PrefixedLabel>
+                <Genial.PrefixedLabel content-text="00" prefix="Grade" text="фывфыв: фывфыво" name="GradeLabel" class="label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/determination-rus-by-lyajka.otf?fileID=12800000&amp;guid=2c083882a88b4f24a8f38ca52d1d5c8e&amp;type=3#determination-rus-by-lyajka&quot;); align-self: center; font-size: 75px;">
+                    <Bindings>
+                        <ui:DataBinding property="ContentText" data-source="project://database/Assets/Bindings/TotalResultsBingind.asset?fileID=11400000&amp;guid=022b68daf9754b3449f10daae750cc89&amp;type=2#TotalResultsBingind" data-source-path="Grade" binding-mode="ToTarget"/>
+                    </Bindings>
+                </Genial.PrefixedLabel>
+            </ui:VisualElement>
+            <ui:Button text="Return" name="ReturnButton" class="button" style="align-self: center; align-content: flex-start; align-items: stretch; width: 155px; height: 57px; font-size: 28px;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

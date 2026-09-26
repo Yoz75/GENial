@@ -3,18 +3,20 @@ namespace Genial
 {
     public static class Grade2ScoreConverter
     {
+        public const float BaseScore = 100;
+
         public static float Convert(Grade grade)
         {
             switch(grade)
             {
                 case Grade.Meh:
-                    return 10;    
+                    return BaseScore * Delta2GradeConverter.GenialDelta / Delta2GradeConverter.MehDelta;
                 case Grade.Good:
-                    return 20;
+                    return BaseScore * Delta2GradeConverter.GenialDelta / Delta2GradeConverter.GoodDelta;
                 case Grade.Great:
-                    return 40;
+                    return BaseScore * Delta2GradeConverter.GenialDelta / Delta2GradeConverter.GreatDelta;
                 case Grade.GENial:
-                    return 80;
+                    return BaseScore;
                 default:
                     return 0;
             }

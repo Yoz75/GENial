@@ -1,7 +1,7 @@
 
 namespace Genial
 {
-    public enum Grade
+    public enum Grade : uint
     {
         Miss,
         Meh,
